@@ -16,7 +16,7 @@ export default function Home() {
           allowfullscreen
         />
 
-        <h3>Elon Musk Creating Starlink for...</h3>
+        <h3>Elon Musk Creating Starlink to...</h3>
         <div>
           <iframe
             scrolling="no"
@@ -50,6 +50,30 @@ export default function Home() {
       <section className="section">
         <h2>Why use Starlink?</h2>
         <h3>Starlink vs. Current Internet</h3>
+        <table>
+          <tr>
+            <td>
+              Faster & More Reliable
+            </td>
+            <td>Starlink satellites are located in low-earth orbit which is around 300 miles above the earth. Traditional internet satellites orbit much further out at about 22,000 miles. As a result Starlink internet will be much faster since the time it takes to communicate with your device will be greatly reduced. Also, connection reliability will be much better. Additionally Starlink plans to launch 30,000 satellites which is 15x more than the total satellites orbiting earth right now.</td>
+          </tr>
+          <tr>
+            <td>
+              Chaeper
+            </td>
+            <td>
+              Starlink is cheaper than cable and satellite internet in rural and suburban areas as different deals will be offered to different customers based on geographic location.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Easier
+            </td>
+            <td>
+              Starlink is available anywhere in the world and is easier to install than conventional internet. It doesn’t require a technician to installing consists of five It has zero risk of spotty service or blackouts.
+            </td>
+          </tr>
+        </table>
 
         <h3>Starlink vs. Competitors</h3>
         <table>
@@ -73,13 +97,13 @@ export default function Home() {
           }
         </table>
 
-        <h3>How will Starlink save your money</h3>
+        <h3>How will Starlink Save Your $$$</h3>
         <div
           className="textbox"
         >
           Starlink is currently listed as $99/mo. for network acc ess with an additional $500 fee for the equipment necessary to connect your home to the satellite internet. However, Musk has said already that he expects those prices to go down as the network expands. Additionally, prices will vary based on their location and more remote places and developing countries will have reduced monthly fees. Many people also expect that competing networks like OneWed may help drive down the costs too. Although traditional networks are currently charging around cheaper rates they are still expensive with AT&T charging $35/mo. for their cheapest internet and $65/mo. for their most expensive service. In the future starlink should be closer to that 65 price point. It will also be very beneficial cost wise for big businesses or large complexes who would normally need to purchase many routers so that reliable internet connection can be supplied throughout the whole building. Even though it may be more expensive for households, getting the other 3 billion people who don’t have an internet connection connected to a network will have huge benefits for the globe's wealth. Having everyone able to communicate wirelessly on a fast network will be very helpful for every country’s economy. Additionally, once Starlink is operational the need for laying expensive fiber optic cables over long distances will no longer be necessary. The estimated total cost of completing the Starlink constellation will be about 10 billion dollars according to Spacex President Gwynne Shotwell.
         </div>
       </section>
-    </div>
+    </div >
   );
 }
