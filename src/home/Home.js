@@ -103,79 +103,85 @@ export default function Home() {
             ))
           }
         </table>
-        <BarChart
-          width={736}
-          height={400}
-          data={competitors}
-          margin={{
-            top: 5,
-            right: 30,
-            left: 20,
-            bottom: 5,
-          }}
-        >
-          <CartesianGrid
-            strokeDasharray="2 3"
-          />
-          <XAxis dataKey="name" />
-          <YAxis />
-          <Tooltip />
-          <Legend />
-          <Bar
-            dataKey="download"
-            fill="#8884d8"
-          />
-          <Bar
-            dataKey="upload"
-            fill="#82ca9d"
-          />
-        </BarChart>
-        <BarChart
-          width={736}
-          height={400}
-          data={competitors}
-          margin={{
-            top: 5,
-            right: 30,
-            left: 20,
-            bottom: 5,
-          }}
-        >
-          <CartesianGrid
-            strokeDasharray="2 3"
-          />
-          <XAxis dataKey="name" />
-          <YAxis />
-          <Tooltip />
-          <Legend />
-          <Bar
-            dataKey="latency"
-            fill="#f2a294"
-          />
-        </BarChart>
-        <BarChart
-          width={736}
-          height={400}
-          data={competitors}
-          margin={{
-            top: 5,
-            right: 30,
-            left: 20,
-            bottom: 5,
-          }}
-        >
-          <CartesianGrid
-            strokeDasharray="2 3"
-          />
-          <XAxis dataKey="name" />
-          <YAxis />
-          <Tooltip />
-          <Legend />
-          <Bar
-            dataKey="satellites"
-            fill="#c7d998"
-          />
-        </BarChart>
+        <div className="chart-container">
+          <BarChart
+            width={736}
+            height={400}
+            data={competitors}
+            margin={{
+              top: 5,
+              right: 30,
+              left: 20,
+              bottom: 5,
+            }}
+          >
+            <CartesianGrid
+              strokeDasharray="2 3"
+            />
+            <XAxis dataKey="name" />
+            <YAxis />
+            <Tooltip />
+            <Legend />
+            <Bar
+              dataKey="download"
+              fill="#8884d8"
+            />
+            <Bar
+              dataKey="upload"
+              fill="#82ca9d"
+            />
+          </BarChart>
+        </div>
+        <div className="chart-container">
+          <BarChart
+            width={736}
+            height={400}
+            data={competitors}
+            margin={{
+              top: 5,
+              right: 30,
+              left: 20,
+              bottom: 5,
+            }}
+          >
+            <CartesianGrid
+              strokeDasharray="2 3"
+            />
+            <XAxis dataKey="name" />
+            <YAxis />
+            <Tooltip />
+            <Legend />
+            <Bar
+              dataKey="latency"
+              fill="#f2a294"
+            />
+          </BarChart>
+        </div>
+        <div className="chart-container">
+          <BarChart
+            width={736}
+            height={400}
+            data={competitors}
+            margin={{
+              top: 5,
+              right: 30,
+              left: 20,
+              bottom: 5,
+            }}
+          >
+            <CartesianGrid
+              strokeDasharray="2 3"
+            />
+            <XAxis dataKey="name" />
+            <YAxis />
+            <Tooltip />
+            <Legend />
+            <Bar
+              dataKey="satellites"
+              fill="#c7d998"
+            />
+          </BarChart>
+        </div>
 
         <h3>How will Starlink Save Your $$$</h3>
         <div
