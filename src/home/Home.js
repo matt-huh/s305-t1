@@ -1,3 +1,4 @@
+import { Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import { competitors } from "./competitors";
 import "./Home.css";
 
@@ -55,7 +56,9 @@ export default function Home() {
             <td>
               Faster & More Reliable
             </td>
-            <td>Starlink satellites are located in low-earth orbit which is around 300 miles above the earth. Traditional internet satellites orbit much further out at about 22,000 miles. As a result Starlink internet will be much faster since the time it takes to communicate with your device will be greatly reduced. Also, connection reliability will be much better. Additionally Starlink plans to launch 30,000 satellites which is 15x more than the total satellites orbiting earth right now.</td>
+            <td>
+              Starlink satellites are located in low-earth orbit which is around 300 miles above the earth. Traditional internet satellites orbit much further out at about 22,000 miles. As a result Starlink internet will be much faster since the time it takes to communicate with your device will be greatly reduced. Also, connection reliability will be much better. Additionally Starlink plans to launch 30,000 satellites which is 15x more than the total satellites orbiting earth right now.
+            </td>
           </tr>
           <tr>
             <td>
@@ -70,10 +73,14 @@ export default function Home() {
               Easier
             </td>
             <td>
-              Starlink is available anywhere in the world and is easier to install than conventional internet. It doesn’t require a technician to installing consists of five It has zero risk of spotty service or blackouts.
+              Starlink is available anywhere in the world and is easier to install than conventional internet. It doesn’t require a technician to install and comes in an easy to install kit. It has zero risk of spotty service or blackouts.
             </td>
           </tr>
         </table>
+
+        <h4>Sooo Easy!!</h4>
+        <img src="https://i-insider-com.cdn.ampproject.org/ii/AW/s/i.insider.com/605890431fcb5700186eea50?width=500&format=jpeg&auto=webp" />
+        <caption>This is a Starlink kit and install instructions. A size of a Macbook box!</caption>
 
         <h3>Starlink vs. Competitors</h3>
         <table>
@@ -96,6 +103,79 @@ export default function Home() {
             ))
           }
         </table>
+        <BarChart
+          width={736}
+          height={400}
+          data={competitors}
+          margin={{
+            top: 5,
+            right: 30,
+            left: 20,
+            bottom: 5,
+          }}
+        >
+          <CartesianGrid
+            strokeDasharray="2 3"
+          />
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <Bar
+            dataKey="download"
+            fill="#8884d8"
+          />
+          <Bar
+            dataKey="upload"
+            fill="#82ca9d"
+          />
+        </BarChart>
+        <BarChart
+          width={736}
+          height={400}
+          data={competitors}
+          margin={{
+            top: 5,
+            right: 30,
+            left: 20,
+            bottom: 5,
+          }}
+        >
+          <CartesianGrid
+            strokeDasharray="2 3"
+          />
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <Bar
+            dataKey="latency"
+            fill="#f2a294"
+          />
+        </BarChart>
+        <BarChart
+          width={736}
+          height={400}
+          data={competitors}
+          margin={{
+            top: 5,
+            right: 30,
+            left: 20,
+            bottom: 5,
+          }}
+        >
+          <CartesianGrid
+            strokeDasharray="2 3"
+          />
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <Bar
+            dataKey="satellites"
+            fill="#c7d998"
+          />
+        </BarChart>
 
         <h3>How will Starlink Save Your $$$</h3>
         <div
