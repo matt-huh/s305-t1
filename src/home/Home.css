@@ -1,3 +1,7 @@
+.home {
+  max-width: 736px;
+}
+
 .section {
   color: #eee;
   display: flex;
@@ -13,4 +17,36 @@
 
 .section > h3 {
   margin-block-start: 3rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #fff;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(odd) {
+  background-color: #444;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #bbb;
+  color: #000;
+}
+
+.textbox {
+  align-items: center;
+  border: 1px solid white;
+  display: flex;
+  font-size: 1.05rem;
+  justify-content: center;
+  line-height: 1.5rem;
+  padding: 20px 100px;
+  max-width: 100%;
 }
